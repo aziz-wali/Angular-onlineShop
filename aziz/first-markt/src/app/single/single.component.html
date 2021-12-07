@@ -1,0 +1,23 @@
+<div class="container">
+    <h4 class="text-center py-4">{{ product.name }}</h4>
+    <div class="row">
+        <div class="product col-lg-6">
+            <img  class="img" src="assets/images/{{product.image}}" /><br>
+            
+        </div>
+        <div class="product col-lg-6 py-4">
+            <h6>Artikel beschreibung :</h6>
+            <p>{{product.beschreibung}}</p>
+            <div class="py-5">
+                <b>Price :{{ product.price }} &euro;</b><br><br>
+                <h6><b>Color :</b></h6>
+                <div class="color red"></div>
+                <div class="color blue"></div>
+                <div class="color black"></div>
+                <div class="color gray"></div><br><br>
+                <button class="btn btn-primary btn-sm"><a routerLink="/login">Add product</a></button>
+                <button class="btn btn-success btn-sm ml-4">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

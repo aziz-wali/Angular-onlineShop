@@ -1,0 +1,20 @@
+
+ <img src="assets/images/shop3.jpg" class="d-block w-100" style="height:560px;width:100%" alt="...">
+
+
+<div class="container">
+    <div class="row">
+    <div class="product col-lg-3 " *ngFor="let product of products">
+        <img  class="img" src="assets/images/{{product.image}}" 
+        /><br>
+        <h6><a routerLink="/single/{{product.id}}">{{ product.name }}</a></h6>
+        <b>{{ product.price }} &euro;</b><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star nchecked"></span><br>
+        <button class="btn btn-primary btn-sm">Add product</button>
+    </div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+.img{
+    transition: all 1s;
+    height:320px;
+}
+.img:hover{
+    transform: rotateY(180deg);
+}
+.checked{
+    color:#f6d908
+}
+.nchecked{
+    color:#DDD;
+}
+.product{
+    margin-bottom: 50px;
+}
