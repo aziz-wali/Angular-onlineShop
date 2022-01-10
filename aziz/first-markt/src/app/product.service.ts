@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ProducService {
+export class ProductService {
   private productsUrl: string;
   private apiServerUrl = environment.apiBaseUrl;
   constructor(private http: HttpClient) { 

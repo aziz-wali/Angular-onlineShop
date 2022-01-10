@@ -6,12 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
-import {ProducService} from './produc.service';
+import {ProductService} from './product.service';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegisterComponent } from './register/register.component';
-import { SingleComponent } from './single/single.component'
+import { SingleComponent } from './single/single.component';
+import { AddproductComponent } from './addproduct/addproduct.component'
 
 const routes: Routes=[
      
@@ -30,7 +31,8 @@ const routes: Routes=[
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    SingleComponent
+    SingleComponent,
+    AddproductComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -39,7 +41,7 @@ const routes: Routes=[
     AppRoutingModule
     
   ],
-  providers: [ProducService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
