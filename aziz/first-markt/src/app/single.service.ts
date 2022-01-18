@@ -11,8 +11,10 @@ export class SingleService {
   constructor(private http: HttpClient) { 
     this.productsUrl = 'http://localhost:8080/single/:id';
 }
+
 public findAll(): Observable<Product[]> {
   return this.http.get<Product[]>(this.productsUrl);
   
 }
+
 }

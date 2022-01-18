@@ -1,24 +1,29 @@
 
-<form action="" class="add-product-form">
+<form class="add-product-form"  (ngSubmit) = "onSubmit()" enctype="multipart/form-data">
     <h2>Add Product</h2>
     <div class="input-container">
-      <i class="fa fa-user icon"></i>
-      <input class="input-field" type="text" placeholder="Product name" name="pname">
+     
+      <input class="input-field" [(ngModel)]="product.name"type="text" placeholder="Product name" name="name">
     </div>
   
     <div class="input-container">
-      <i class="fa fa-euro icon"></i>
-      <input class="input-field" type="text" placeholder="Product Price" name="pprice">
+      
+      <input class="input-field" [(ngModel)]="product.price" type="text" placeholder="Product Price" name="price">
     </div>
   
     <div class="input-container">
-      <i class="fas fa-hive icon"></i>
-      <input class="input-field" type="text" placeholder="weight" name="weight">
+     
+      <input class="input-field" [(ngModel)]="product.productCode" type="text" placeholder="publisher" name="productCode">
     </div>
 
     <div class="input-container">
-        <i class="fa fa-text-width icon"></i>
-        <textarea class="input-field" type="text" placeholder="Description" name="pdesc">
+      
+      <input class="input-field" [(ngModel)]="product.image" type="file" placeholder="image" name="file" (change)="onSelectFile($event)">
+    </div>
+
+    <div class="input-container">
+       
+        <textarea class="input-field" [(ngModel)]="product.beschreibung" type="text" placeholder="Description" name="beschreibung">
             </textarea>
       </div>
   

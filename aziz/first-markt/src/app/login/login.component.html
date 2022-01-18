@@ -1,15 +1,15 @@
-<form action="" class="login-form">
+<form action="" class="login-form" (ngSubmit)="onSubmit()">
     <h2>Login Form</h2>
     
   
     <div class="input-container">
-      <i class="fa fa-envelope icon"></i>
-      <input class="input-field" type="text" placeholder="Email" name="email">
+      
+      <input class="input-field" type="text" [(ngModel)]="user.username" placeholder="username" name="username">
     </div>
   
     <div class="input-container">
-      <i class="fa fa-key icon"></i>
-      <input class="input-field" type="password" placeholder="Password" name="psw">
+     
+      <input class="input-field" type="password" [(ngModel)]="user.password" placeholder="Password" name="password">
     </div>
   
     <button type="submit" class="btn">Login</button>

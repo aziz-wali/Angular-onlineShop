@@ -13,15 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegisterComponent } from './register/register.component';
 import { SingleComponent } from './single/single.component';
 import { AddproductComponent } from './addproduct/addproduct.component'
+import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
-const routes: Routes=[
-     
- 
-  
-  {path: 'login', component: LoginComponent}
-  
-
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +26,14 @@ const routes: Routes=[
     LoginComponent,
     RegisterComponent,
     SingleComponent,
-    AddproductComponent
+    AddproductComponent,
+    DashboardComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
     
   ],
   providers: [ProductService],
